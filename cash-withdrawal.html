@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webtransfer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="dist/cabinet-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/cabinet-dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="dist/cabinet-dist/css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="dist/cabinet-dist/js/bootstrap.min.js"></script>
+    <script src="dist/cabinet-dist/js/bootstrap-select.js"></script>
+    <script src="dist/cabinet-dist/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="dist/cabinet-dist//"><img src="dist/cabinet-dist/img/logo.png" alt=""></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav cabinet-nav">
+                            <li class="cabinet"><a href="dist/cabinet-dist/#" class="active">Карты</a></li>
+                            <li class="cabinet"><a href="dist/cabinet-dist/#">Профиль</a></li>
+                            <li class="cabinet"><a href="dist/cabinet-dist/#">Транзакции</a></li>
+                            <li class="cabinet"><a href="dist/cabinet-dist/#">Ввод денег</a></li>
+                            <li class="cabinet"><a href="dist/cabinet-dist/#">Вывод денег</a></li>
+                            <li class="cabinet"><a href="dist/cabinet-dist/#">Поддержка</a></li>
+                            <li class="dropdown language hidden-sm hidden-xs"><span class="visible-lg">Ваш язык:</span>
+                                <a href="dist/cabinet-dist/#" class="dropdown-toggle" data-toggle="dropdown"><img src="dist/cabinet-dist/img/ru.png" alt="ru"><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dist/cabinet-dist/#"><img src="dist/cabinet-dist/img/ru.png" alt="ru"></a></li>
+                                    <li><a href="dist/cabinet-dist/#"><img src="dist/cabinet-dist/img/ru.png" alt="ru"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+    <section class="cabinet-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-md-9 col-sm-8 left-col">
+                    <div class="cabinet-top">
+                        <div class="row">
+                            <div class="col col-md-3 col-sm-6 col-xs-12 border-bottom">
+                                <h5>Доллар: 0.00</h5>
+                                <p>U 8002 5319 5380 USD</p>
+                            </div>
+                            <div class="col col-md-3 col-sm-6 col-xs-12 border-bottom">
+                                <h5>Евро: 0.00</h5>
+                                <p>U 8002 5319 5380 USD</p>
+                            </div>
+                            <div class="col col-md-3 col-sm-6 col-xs-12">
+                                <h5>Фунт: 0.00</h5>
+                                <p>U 8002 5319 5380 USD</p>
+                            </div>
+                            <div class="col col-md-3 col-sm-6 col-xs-12 last">
+                                <h5>Рубль: 0.00</h5>
+                                <p>U 8002 5319 5380 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-block">
+                        <h2>Вывод денег на свою карту либо чужую карту/кошелек</h2>
+                        <form role="form">
+                            <div class="block">
+                                <div class="form-group">
+                                    <label>Варианты вывода:</label>
+                                    <div class="row">
+                                        <div class="col col-sm-6">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="checkbox1" class="str-b" style="styled">
+                                                <label for="checkbox1">
+                                                    На свою карту
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="checkbox2" class="str-b" style="styled">
+                                                <label for="checkbox2">
+                                                    На чужую карту/кошелек
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Введите реквизиты:</label>
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="form-group">
+                                    <label>Варианты вывода:</label>
+                                    <div class="row">
+                                        <div class="col col-sm-6">
+                                            <select class="selectpicker" data-style="select-picker">
+                                                <option>Выберите вариант</option>
+                                                <option>Отправить на чужой кошелек</option>
+                                                <option>Отправить на чужую карту</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="form-group">
+                                    <label>Введите сумму вывода:</label>
+                                    <div class="row">
+                                        <div class="col col-sm-4 no-padding-right">
+                                            <input class="form-control" type="text" placeholder="0.00">
+                                        </div>
+                                        <div class="col col-sm-2 no-padding-left">
+                                            <select class="selectpicker" data-style="select-picker">
+                                                <option>USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-md-3 right-col">
+                    <div class="cabinet-info">
+                        <h4>Иван Васильевич</h4>
+                        <p>Последний вход: 16 мая 12:38</p>
+                        <p>IP: 94.178.122.81</p>
+                        <a href="dist/cabinet-dist/" class="btn btn-info">Выйти</a>
+                    </div>
+                    <div class="card-info">
+                        <h4>Карты:</h4>
+                        <div class="clearfix">
+                            <div class="fllsv clearfix">
+                                <img class="fgrww" src="dist/cabinet-dist/img/iconsds.png">
+                                <p>5311 **** **** 0765</p>
+                            </div>
+                            <div class="flrsv clearfix">
+                                <h5>0.00</h5>
+                                <p class="ngff">USD</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="fllsv clearfix">
+                                <img class="fgrww" src="dist/cabinet-dist/img/iconsd.png">
+                                <p>2831 **** **** 0331</p>
+                            </div>
+                            <div class="flrsv clearfix">
+                                <h5>0.00</h5>
+                                <p class="ngff">USD</p>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="fllsv clearfix">
+                                <img class="fgrww" src="dist/cabinet-dist/img/bonus.png">
+                                <p>В111222444555</p>
+                            </div>
+                            <div class="flrsv clearfix">
+                                <h5>0.00</h5>
+                                <p class="ngff">USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="dist/cabinet-dist/" class="btn btn-info btn-order-card">Заказать карты</a>
+                    <div class="help">
+                        <img src="dist/cabinet-dist/img/chat.png" alt="">
+                        <p>Возникли вопросы?<br />
+                            Мы обязательно на них ответим</p>
+                        <a href="dist/cabinet-dist/" class="btn btn-info">НАПИСАТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <h4>По проекту</h4>
+                    <ul>
+                        <li><a href="dist/cabinet-dist/">О проекте</a></li>
+                        <li><a href="dist/cabinet-dist/">Кредиторам</a></li>
+                        <li><a href="dist/cabinet-dist/">Заемщикам</a></li>
+                        <li><a href="dist/cabinet-dist/">Партнерам</a></li>
+                        <li><a href="dist/cabinet-dist/">FAQ`s</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>Документы</h4>
+                    <ul>
+                        <li><a href="dist/cabinet-dist/">Правила и условия</a></li>
+                        <li><a href="dist/cabinet-dist/">Конфиденциальность</a></li>
+                        <li><a href="dist/cabinet-dist/">Приемлемое использ.</a></li>
+                        <li><a href="dist/cabinet-dist/">Гарантийный фонд</a></li>
+                        <li><a href="dist/cabinet-dist/">Выкуп займов</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>Перевод средств</h4>
+                    <ul>
+                        <li><a href="dist/cabinet-dist/">Customer Agreement</a></li>
+                        <li><a href="dist/cabinet-dist/">Privacy Policy</a></li>
+                        <li><a href="dist/cabinet-dist/">Видео участников</a></li>
+                        <li><a href="dist/cabinet-dist/">Школа и Форум Webtransfer</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>Контактная информация</h4>
+                    <ul>
+                        <li><a href="dist/cabinet-dist/">Служба Поддержки</a></li>
+                        <li><a href="dist/cabinet-dist/">Альтернативная поддержка</a></li>
+                    </ul>
+                    <h4 class="bottom-social">Социальные сети</h4>
+                    <div class="bottom-social-links">
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc1.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc2.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc3.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc4.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc5.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc6.png" alt=""></a>
+                        <a href="dist/cabinet-dist/"><img src="dist/cabinet-dist/img/soc7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-sm-5">
+                    <h5>Оператор социальной кредитной сети:</h5>
+                    <p>Webtransfer Corp., регистрационный № <a href="dist/cabinet-dist/">3951305</a>, Нью Йорк, США.</p>
+                </div>
+                <div class="col col-sm-7">
+                    <h5>Оператор денежных переводов:</h5>
+                    <p>Webtransfer Europe Ltd., регистрационный № <a href="dist/cabinet-dist/">06453803</a>, Лондон, Великобритания.
+                        Лицензия на предоставление финансовых услуг № <a href="dist/cabinet-dist/">569645</a> от 17/01/2012.
+                        Регулируется Financial Conduct Authority (FCA), в соответствии с Payment Service Regulations 2009.</p>
+                </div>
+            </div>
+            <div class="logos hidden-xs">
+                <ul>
+                    <li><img src="dist/cabinet-dist/img/bottom01.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom02.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom03.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom04.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom05.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom06.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom07.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom08.png" alt=""></li>
+                    <li><img src="dist/cabinet-dist/img/bottom09.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copy">&copy; All rights reserved Webtransfer, 2006—2015</p>
+            <div class="btn-group dropup hidden-xs">
+                <span class="lang-label">Ваш язык: </span>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Русский <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="dist/cabinet-dist/#">Русский</a></li>
+                    <li><a href="dist/cabinet-dist/#">English</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

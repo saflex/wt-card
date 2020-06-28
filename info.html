@@ -1,0 +1,342 @@
+<html>
+
+<head>
+    <title>Тарифы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/checkboxes.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/newstyles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/main.js"></script>
+    <meta name="description" content="тарифы" />
+    <meta name="keywords" content="тарифы" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <img src="img/logowt.gif" style="width: 127px;" alt=""></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/about">О КОМПАНИИ</a>
+                            </li>
+                            <li>
+                                <a href="/solutions">РЕШЕНИЯ</a>
+                            </li>
+                            <li>
+                                <a class="active" href="/rates">ТАРИФЫ</a>
+                            </li>
+                            <li>
+                                <a href="/faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="/contacts">КОНТАКТЫ</a>
+                            </li>
+                            <li>
+                                <a href="/registration">Регистрация</a>
+                            </li>
+                            <li class="cabinet">
+                                <a href="/login">ВОЙТИ</a>
+                            </li>
+                            <li class="dropdown language hidden-sm hidden-xs">
+                                <span class="visible-lg"></span>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="img/ru.png" alt="ru">
+                                    Русский <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/tools/lang/set?lang=ru">
+                                            <img src="img/ru.png" alt="ru">Русский</a>
+                                    </li>
+                                    <li>
+                                        <a href="/tools/lang/set?lang=en">
+                                            <img src="img/en.gif" alt="en">English</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+    <!-- content start -->
+    <div id="content">
+        <section class="faqs nofaqs">
+            <div class="container-fluid">
+                <div class="benefits-section">
+                    <div class="container containers">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="section-abouts2 text-center">Используйте всегда и везде</h2>
+                                <h4 class="text-center">
+                                    Дебетовые карты Webtransfer позволяют упростить платежи и расходы управления с повышенным удобством, гибкостью и безопасностью. Осуществлять платежи можно в долларах США, без необходимости владением банковскими счетами или кредитными чеками
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="blcs-2">
+            <section class="greye markets-point htys">
+                <div id="expenses" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz" src="img/g1.png" alt="Expenses">
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Расходы</h3>
+                            <p>Ограничьте свои расходы. Использование предоплаченной карты будет гарантировать, что расходы не будут больше, чем средства, выделяемые на дебетовую карту. Отчетность по ним отслеживается легко, быстро и в реальном времени.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </section>
+            <section class="markets-point htys hidden-md hidden-lg">
+                <div id="travel" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz imsizs" src="img/g2.png" alt="Travel">
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Путешествуйте</h3>
+                            <p>Карта Webtransfer позволяет обеспечить безопасный доступ к наличности в банкоматах по всему миру через сеть карты Visa. Доступна в трех валютах - USD, GBP, EUR. Владельцам карты Webtransfer будут рады везде!</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.container -->
+                </div>
+            </section>
+            <section class="markets-point htys hidden-xs hidden-sm">
+                <div id="travel" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Путешествуйте</h3>
+                            <p>Карта Webtransfer позволяет обеспечить безопасный доступ к наличности в банкоматах по всему миру через сеть карты Visa. Доступна в трех валютах - USD, GBP, EUR. Владельцам карты Webtransfer будут рады везде!</p>
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz imsizs" src="img/g2.png" alt="Travel">
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.container -->
+                </div>
+            </section>
+            <section class="greye markets-point htys">
+                <div id="commissions" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz" src="img/g3.png" alt="Commissions">
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Комиссионные</h3>
+                            <p>Используйте предоплаченную платежную карту Webtransfer для оплаты сотрудников, подрядчиков и агентов. Во избежание траты усилий, времени и неприятности работает система проверки кредитоспособности получателей.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </section>
+            <section class="markets-point htys hidden-md hidden-lg">
+                <div id="global" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                    </div><!-- /.col-md-5 -->
+                    <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                        <img class="img-responsive imsiz" src="img/g4.png" alt="Global Transfers">
+                    </div><!-- /.col-md-5 -->
+                    <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                        <h3>Глобальные трансферы</h3>
+                        <p>Перевод средств на любую карту в любой точке мира в течение нескольких минут надежен и безопасен. Процесс конец в конец является цельным и чрезвычайно рентабельным по сравнению с обычными банковскими процессами, снижая эксплуатационные расходы.</p>
+                    </div><!-- /.container -->
+                </div>
+            </section>
+            <section class="markets-point htys hidden-xs hidden-sm">
+                <div id="global" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Глобальные трансферы</h3>
+                            <p>Перевод средств на любую карту в любой точке мира в течение нескольких минут надежен и безопасен. Процесс конец в конец является цельным и чрезвычайно рентабельным по сравнению с обычными банковскими процессами, снижая эксплуатационные расходы.</p>
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz imsizv" src="img/g4.png" alt="Global Transfers">
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.container -->
+                </div>
+            </section>
+            <section class="greye markets-point htys">
+                <div id="incentives" class="marker"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <img class="img-responsive imsiz imsizv2" src="img/g5.png" alt="INcentives">
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-md-5 col-md-offset-1 col-md-offset-s">
+                            <h3>Бонусы</h3>
+                            <p>Webtransfer является идеальным средством для оплаты рекламных акций и бонусов. Это могут быть подарочные карты, ваучервы или другие бонусы, связаные с Вашими партнерскими программами. Вы также можете полностью контролировать количество и характер предоставляемых приемуществ.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </section>
+        </div>
+    </div>
+    <!-- content end -->
+    <div class="bottom">
+        <div class="container-fluid" style="max-width: 1170px; padding-right: 15px; padding-left: 15px;">
+            <div class="row">
+                <div class="col col-sm-3">
+                    <h4>ПО ПРОЕКТУ</h4>
+                    <ul>
+                        <li>
+                            <a href="/about" title="">О копании</a>
+                        </li>
+                        <li>
+                            <a href="/visa" title="">Visa Prepaid Card</a>
+                        </li>
+                        <li>
+                            <a href="/blog" title="">Новостной блог</a>
+                        </li>
+                        <li>
+                            <a href="/rates" title="">Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="/faq" title="">FAQ`s</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>РЕШЕНИЯ</h4>
+                    <ul>
+                        <li>
+                            <a href="/solutions" title="">Для частного лица</a>
+                        </li>
+                        <li>
+                            <a href="/solutions" title="">Для компаний</a>
+                        </li>
+                        <li>
+                            <a href="/solutions" title="">Для обменников валют</a>
+                        </li>
+                        <li>
+                            <a href="/solutions" title="">Для разработчиков</a>
+                        </li>
+                        <li>
+                            <a href="/solutions" title="">Для партнеров</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>ДОКУМЕНТЫ</h4>
+                    <ul>
+                        <li>
+                            <a href="/privacy" title="">Конфиденциальность</a>
+                        </li>
+                        <li>
+                            <a href="/agreement" title="">Пользовательское соглашение</a>
+                        </li>
+                        <li>
+                            <a href="/acceptable-use" title="">Приемлемое использование</a>
+                        </li>
+                        <li>
+                            <a href="/aml-program" title="">AML Программа</a>
+                        </li>
+                        <li>
+                            <a href="/use-cases" title="">Примеры использования</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h4>КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="http://help.webtransfercard.com/ru" title="">Служба Поддержки</a>
+                        </li>
+                        <li>
+                            <a href="/contacts" title="">Контакты</a>
+                        </li>
+                    </ul>
+                    <h4 class="bottom-social">СОЦИАЛЬНЫЕ СЕТИ</h4>
+                    <div class="bottom-social-links">
+                        <a href="http://www.odnoklassniki.ru/group/51729362518158" target="_blank">
+                            <img src="img/soc1.png" alt=""></a>
+                        <a href="http://vk.com/club55660968" target="_blank">
+                            <img src="img/soc2.png" alt=""></a>
+                        <a href="http://www.twitter.com/webtransfercom" target="_blank">
+                            <img src="img/soc3.png" alt=""></a>
+                        <a href="http://my.mail.ru/community/webtransfer/" target="_blank">
+                            <img src="img/soc5.png" alt=""></a>
+                        <a href="http://www.facebook.com/webtransfer" target="_blank">
+                            <img src="img/soc6.png" alt=""></a>
+                        <a href="https://plus.google.com/u/0/118412304892954038780/posts" target="_blank">
+                            <img src="img/soc7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-sm-5">
+                    <h5>Оператор социальной кредитной сети:</h5>
+                    <p>
+                        Webtransfer Corp., регистрационный №
+                        <a href="">3951305</a>
+                        , Нью Йорк, США.
+                    </p>
+                </div>
+                <div class="col col-sm-7">
+                    <p>
+                        <br>
+                        Webtransfer Visa Card is issued by Wave Crest Holdings Limited pursuant to a license from Visa Europe. Visa is a registered trademark of Visa Incorporated. Wave Crest Holdings Limited is a licensed electronic money institution by the Financial Services Commission, Gibraltar.
+                    </p>
+                </div>
+            </div>
+            <div class="logos hidden-xs">
+                <ul>
+                    <li>
+                        <img alt="" src="img/bottom04.png"></li>
+                    <li>
+                        <img alt="" src="img/bottom05.png"></li>
+                    <li>
+                        <img alt="" src="img/bottom06.png"></li>
+                    <li>
+                        <img alt="" src="img/bottom07.png"></li>
+                    <li>
+                        <img alt="" src="img/bottom08.png"></li>
+                    <li>
+                        <img alt="" src="img/bottom09.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid" style="max-width: 1170px;padding-right: 15px;padding-left: 15px;">
+            <p class="copy">&copy; All rights reserved Webtransfer, 2006—2015</p>
+        </div>
+    </footer>
+</body>
+
+</html>
